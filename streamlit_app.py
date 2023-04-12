@@ -16,7 +16,7 @@ import numpy as np
 #import hdbscan
 #from kneed import KneeLocator
 import pickle
-
+import os
 """
 # Welcome to!
 
@@ -28,8 +28,14 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
-with open('my_datalist.pickle', 'rb') as f:
-    datalist = pickle.load(f)
+filename = "my_datalist.pickle"
+if os.path.exists(filename):
+    print(f"The file {filename} exists.")
+else:
+    print(f"The file {filename} does not exist.")
+
+# with open('my_datalist.pickle', 'rb') as f:
+#     datalist = pickle.load(f)
 
 print(datalist[1].columns)
 with st.echo(code_location='below'):
