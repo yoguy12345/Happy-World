@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from scikit_learn_extra.cluster import KMedoids
+#from scikit_learn_extra.cluster import KMedoids
 from sklearn.cluster import KMeans, DBSCAN
 from sklearn.preprocessing import StandardScaler, MinMaxScaler
 from sklearn.metrics import silhouette_score,calinski_harabasz_score,davies_bouldin_score
