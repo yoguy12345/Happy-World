@@ -1,8 +1,23 @@
+import pandas as pd
+import numpy as np
+from sklearn_extra.cluster import KMedoids
+from sklearn.cluster import KMeans, DBSCAN
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from sklearn.metrics import silhouette_score,calinski_harabasz_score,davies_bouldin_score
+from sklearn.cluster import OPTICS
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+import plotly.express as px
+import hdbscan
+from kneed import KneeLocator
+import pickle
+
 from collections import namedtuple
 import altair as alt
 import math
 import pandas as pd
 import streamlit as st
+import pickle
 
 """
 # Welcome to!
@@ -15,7 +30,10 @@ forums](https://discuss.streamlit.io).
 In the meantime, below is an example of what you can do with just a few lines of code:
 """
 
+with open('my_datalist.pickle', 'rb') as f:
+    datalist = pickle.load(f)
 
+print(datalist[1].columns)
 with st.echo(code_location='below'):
     total_points = st.slider("Number of points in spiral", 1, 5000, 2000)
     num_turns = st.slider("Number of turns in spiral", 1, 100, 9)
