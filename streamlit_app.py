@@ -11,10 +11,10 @@ import numpy as np
 #from sklearn.metrics import silhouette_score,calinski_harabasz_score,davies_bouldin_score
 #from sklearn.cluster import OPTICS
 #from sklearn.decomposition import PCA
-import matplotlib.pyplot as plt
-import plotly.express as px
-import hdbscan
-from kneed import KneeLocator
+#import matplotlib.pyplot as plt
+#import plotly.express as px
+#import hdbscan
+#from kneed import KneeLocator
 import pickle
 
 """
