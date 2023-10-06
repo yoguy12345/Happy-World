@@ -1,6 +1,6 @@
-Happy-World website.
+# Happy-World.
 
-Please visit: [Happy-World](https://happy-world.streamlit.app/)
+Please visit the website: [Happy-World](https://happy-world.streamlit.app/)
 
 Countries were divided up into clusters based on many techniques to see which countries are happiest.
 Recommendations were given for improvements of countries and the happiness trajectories of the countries were shown over time.
