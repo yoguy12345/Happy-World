@@ -275,6 +275,7 @@ with open('my_datalist.pickle', 'rb') as f:
 with open('countrymappinglist.pickle', 'rb') as f:
     countrymappinglist = pickle.load(f)
 
+st.write(countrymappinglist)
 
 #form for first demand, generates clusters for a country
 with st.form(key='inputcountryform'):
