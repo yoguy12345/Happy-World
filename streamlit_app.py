@@ -121,7 +121,7 @@ def getcentroids(dataset, criteria='custom_rank'):
 #returns the cluster a country should be moving towards as the closest happier cluster
 def nextbestone(country,centroidlist): #country is arraylike, both have happiness rank and raw features
     #if country is in cluster 0, it is already happy
-    if(country["custom_rank"] == 0):
+    if(country['custom_rank'] == 0):
         return -1
 
     #fileter by happier clusters
