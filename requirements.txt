@@ -4,6 +4,4 @@ streamlit
 plotly
 hdbscan
 kneed
-pickle
-os
 time
