@@ -5,24 +5,16 @@ import pandas as pd
 import streamlit as st
 import pandas as pd
 import numpy as np
-#from scikit_learn_extra.cluster import KMedoids
-#from sklearn.cluster import KMeans, DBSCAN
-#from sklearn.preprocessing import StandardScaler, MinMaxScaler
-#from sklearn.metrics import silhouette_score,calinski_harabasz_score,davies_bouldin_score
-#from sklearn.cluster import OPTICS
-#from sklearn.decomposition import PCA
-#import matplotlib.pyplot as plt
-#import plotly.express as px
-#import hdbscan
-#from kneed import KneeLocator
-import pickle
-import os
-
 import plotly.express as px
 import plotly.graph_objs as go
 import hdbscan
 from kneed import KneeLocator
+import pickle
+import os
 import time
+import streamlit as st
+
+
 
 """
 # Welcome to!
