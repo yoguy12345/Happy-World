@@ -1,5 +1,6 @@
 altair
 pandas<2.0.0
+numpy ==1.26.4
 streamlit
 plotly
 hdbscan
