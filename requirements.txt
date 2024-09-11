@@ -1,5 +1,5 @@
 altair
-pandas == 1.5.2
+pandas
 streamlit
 plotly
 hdbscan
